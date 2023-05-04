@@ -1,4 +1,4 @@
-package com.cabret.projetoler
+package com.cabret.projetoler.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.GridView
 import android.widget.Toast
+import com.cabret.projetoler.R
 import com.cabret.projetoler.adapters.GridViewAdapter
 import com.cabret.projetoler.modals.GridViewModal
 
@@ -45,12 +46,10 @@ class HomeFragment : Fragment() {
         gridViewLivros.adapter = gridViewAdapter
 
         gridViewLivros.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
-            // inside on click method we are simply displaying
-            // a toast message with course name.
-            Toast.makeText(
-                context, listaLivros[position].titulo + " selected",
-                Toast.LENGTH_SHORT
-            ).show()
+            val transaction = activity?.supportFragmentManager?.beginTransaction()
+            transaction?.replace(R.id.container, LivroDetailFragment())
+            transaction?.disallowAddToBackStack()
+            transaction?.commit()
         }
 
         return homeFragmentView;

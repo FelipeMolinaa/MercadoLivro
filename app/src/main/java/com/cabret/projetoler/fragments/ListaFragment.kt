@@ -1,10 +1,11 @@
-package com.cabret.projetoler
+package com.cabret.projetoler.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.cabret.projetoler.R
 
 class ListaFragment : Fragment() {
 

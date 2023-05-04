@@ -1,10 +1,12 @@
 package com.cabret.projetoler
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.cabret.projetoler.fragments.CarrinhoFragment
+import com.cabret.projetoler.fragments.HomeFragment
+import com.cabret.projetoler.fragments.ListaFragment
+import com.cabret.projetoler.fragments.PerfilFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
@@ -40,7 +42,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
     }
 
-    private  fun loadFragment(fragment: Fragment, fragmentVal: Int){
+    fun loadFragment(fragment: Fragment, fragmentVal: Int){
         val transaction = supportFragmentManager.beginTransaction()
         if(fragmentVal > AtualFragmentVal){
             transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
