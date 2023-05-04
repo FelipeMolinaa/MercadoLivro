@@ -48,7 +48,7 @@ internal class GridViewAdapter (
         titulo = convertView!!.findViewById(R.id.titulo_textView)
         image = convertView!!.findViewById(R.id.capa_imageView)
 
-        //image.setImageResource(listaLivros.get(position).image)
+        image.setImageResource(listaLivros.get(position).image)
         titulo.setText(listaLivros.get(position).titulo)
         autor.setText(listaLivros.get(position).autor)
         return convertView

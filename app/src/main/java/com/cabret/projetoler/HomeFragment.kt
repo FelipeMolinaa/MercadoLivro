@@ -34,10 +34,12 @@ class HomeFragment : Fragment() {
         gridViewLivros = homeFragmentView.findViewById(R.id.livros_gridView)
         listaLivros = ArrayList<GridViewModal>()
 
-        listaLivros = listaLivros + GridViewModal(1, "Teste1","teste1")
-        listaLivros = listaLivros + GridViewModal(1, "Teste2","teste2")
-        listaLivros = listaLivros + GridViewModal(1, "Teste3","teste3")
-        listaLivros = listaLivros + GridViewModal(1, "Teste4","teste4")
+        listaLivros = listaLivros + GridViewModal(R.mipmap.ic_milk_and_honey, "milk and honey","rupi kaur")
+        listaLivros = listaLivros + GridViewModal(R.mipmap.ic_harry_potter, "Harry potter","J. K. Rowling")
+        listaLivros = listaLivros + GridViewModal(R.mipmap.ic_homem_rico, "O Homem mais Rico","George Samuel Clason")
+        listaLivros = listaLivros + GridViewModal(R.mipmap.ic_milk_and_honey, "milk and honey","rupi kaur")
+        listaLivros = listaLivros + GridViewModal(R.mipmap.ic_harry_potter, "Harry potter","J. K. Rowling")
+        listaLivros = listaLivros + GridViewModal(R.mipmap.ic_homem_rico, "O Homem mais Rico","George Samuel Clason")
 
         val gridViewAdapter = GridViewAdapter(listaLivros, homeFragmentContext)
         gridViewLivros.adapter = gridViewAdapter
