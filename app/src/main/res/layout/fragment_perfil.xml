@@ -109,7 +109,7 @@
             android:layout_gravity="center"
             android:backgroundTint="#AB1A11"
             android:paddingHorizontal="70dp"
-            android:text="Solicitar"
+            android:text="Conectar"
             android:textSize="16sp" />
 
     </LinearLayout>

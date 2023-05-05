@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import com.cabret.projetoler.fragments.CarrinhoFragment
 import com.cabret.projetoler.fragments.HomeFragment
 import com.cabret.projetoler.fragments.ListaFragment
+import com.cabret.projetoler.fragments.LivroDetailFragment
 import com.cabret.projetoler.fragments.PerfilFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
@@ -40,15 +42,14 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                 else -> {true}
             }
         }
+
+        findViewById<FloatingActionButton>(R.id.usuarioFAB).setOnClickListener{
+            loadFragment(PerfilFragment(),4)
+        }
     }
 
     fun loadFragment(fragment: Fragment, fragmentVal: Int){
         val transaction = supportFragmentManager.beginTransaction()
-        if(fragmentVal > AtualFragmentVal){
-            transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
-        }else{
-            transaction.setCustomAnimations(R.anim.slide_out_left, R.anim.slide_in_right);
-        }
         transaction.replace(R.id.container,fragment)
         transaction.commit()
     }
