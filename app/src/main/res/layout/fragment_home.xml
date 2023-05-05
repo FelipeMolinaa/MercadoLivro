@@ -109,7 +109,7 @@
         <GridView
             android:id="@+id/livros_gridView"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="600dp"
             android:numColumns="2"
             android:horizontalSpacing="5dp"
             android:verticalSpacing="5dp"
