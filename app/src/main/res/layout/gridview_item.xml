@@ -3,20 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="10dp">
+    android:padding="5dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="16dp">
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardCornerRadius="10dp">
             <ImageView
                 android:id="@+id/capa_imageView"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:src="@mipmap/ic_launcher"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
                 />
         </androidx.cardview.widget.CardView>
 
@@ -25,12 +27,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Titulo"
-            android:textSize="25sp" />
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="5dp"/>
         <TextView
             android:id="@+id/autor_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
             android:text="teste"/>
     </LinearLayout>
 
