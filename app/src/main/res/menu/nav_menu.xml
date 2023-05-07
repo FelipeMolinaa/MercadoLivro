@@ -7,7 +7,7 @@
     <item
         android:id="@+id/lista"
         android:icon="@drawable/baseline_list_24"
-        android:title="lista"  />
+        android:title="listas"  />
     <item
         android:id="@+id/carrinho"
         android:icon="@drawable/baseline_shopping_cart_24"

@@ -58,19 +58,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            style="@style/primaryLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="Esqueceu sua senha?"
-            android:textColor="#AB1A11"
-            android:textStyle="bold" />
+            android:text="Esqueceu sua senha?" />
 
         <TextView
+            style="@style/primaryLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ainda não tem cadastro?"
-            android:textColor="#AB1A11"
-            android:textStyle="bold" />
+            android:text="Ainda não tem cadastro?" />
     </LinearLayout>
 
     <LinearLayout
@@ -93,10 +90,9 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
-        android:background="#C58357"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -104,13 +100,11 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            style="@style/primaryButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#AB1A11"
-            android:paddingHorizontal="70dp"
-            android:text="Conectar"
-            android:textSize="16sp" />
+            android:text="Conectar" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

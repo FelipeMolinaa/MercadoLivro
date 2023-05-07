@@ -183,26 +183,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="O livro parece estar em boas condições, sem rasgos ou amassados significativos nas páginas ou na capa. As bordas das páginas estão um pouco desgastadas pelo manuseio, mas ainda estão legíveis. Não há manchas de água ou sinais visíveis de danos causados por insetos. No geral, o estado do livro parece ser bom e adequado para a leitura."/>
+            <Button
+                style="@style/primaryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Solicitar" />
         </LinearLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:layout_marginTop="28dp"
-        android:background="#C58357"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_gravity="center_horizontal">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#AB1A11"
-            android:paddingHorizontal="70dp"
-            android:layout_gravity="center"
-            android:text="Solicitar"
-            android:textSize="16sp"/>
     </LinearLayout>
 </LinearLayout>

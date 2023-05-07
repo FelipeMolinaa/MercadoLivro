@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="primaryButton">
+        <item name="android:backgroundTint">#ed145b</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingVertical">10dp</item>
+        <item name="android:paddingHorizontal">30dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="primaryLink">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ed145b</item>
+    </style>
+    <style name="defaultTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#ed145b</item>
+    </style>
+    <style name="defaultText">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
