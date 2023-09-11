@@ -1,5 +1,6 @@
 package com.cabret.projetoler.adapters
 
+import android.app.Activity
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.cabret.projetoler.R
 import com.cabret.projetoler.modals.GridViewModal
 
@@ -48,7 +50,11 @@ internal class GridViewAdapter (
         titulo = convertView!!.findViewById(R.id.titulo_textView)
         image = convertView!!.findViewById(R.id.capa_imageView)
 
-        image.setImageResource(listaLivros.get(position).image)
+        Glide.with(context)
+            .load(listaLivros.get(position).image)
+            .into(image)
+
+//        image.setImageResource(listaLivros.get(position).image)
         titulo.setText(listaLivros.get(position).titulo)
         autor.setText(listaLivros.get(position).autor)
         return convertView

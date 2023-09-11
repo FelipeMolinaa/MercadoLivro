@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:layout_editor_absoluteX="2dp"
     tools:layout_editor_absoluteY="31dp">
 
@@ -110,15 +110,15 @@
             android:id="@+id/livros_gridView"
             android:layout_width="match_parent"
             android:layout_height="600dp"
-            android:numColumns="2"
             android:horizontalSpacing="5dp"
+            android:numColumns="2"
             android:verticalSpacing="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/generosHorizontalScrollView"
-            app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

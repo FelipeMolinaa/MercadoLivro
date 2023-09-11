@@ -37,7 +37,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:textSize="14sp"
-            android:text="teste"/>
+            android:text="teste"
+            android:layout_marginBottom="10dp"/>
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
