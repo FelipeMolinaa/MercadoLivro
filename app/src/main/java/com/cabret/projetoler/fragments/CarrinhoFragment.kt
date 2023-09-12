@@ -31,9 +31,9 @@ class CarrinhoFragment : Fragment() {
         gridViewLivros = carrinhoFragmentView.findViewById(R.id.livros_gridView)
         listaLivros = ArrayList<GridViewModal>()
 
-        listaLivros = listaLivros + GridViewModal("", "milk and honey","rupi kaur")
-        listaLivros = listaLivros + GridViewModal("", "Harry potter","J. K. Rowling")
-        listaLivros = listaLivros + GridViewModal("", "O Homem mais Rico","George Samuel Clason")
+        listaLivros = listaLivros + GridViewModal("https://m.media-amazon.com/images/I/61Fo3CitEGL._AC_UF1000,1000_QL80_.jpg", "A Menina que Roubava Livros","Markus Zusak")
+        listaLivros = listaLivros + GridViewModal("https://lh3.googleusercontent.com/-Wsav6WffUaA/TYCmWTLxapI/AAAAAAAADfQ/V-6ZSLxrVl8/w1200-h675-p-k-no-nu/pc1.jpg", "Harry Potter e a Pedra Filosofal","J. K. Rowling")
+        listaLivros = listaLivros + GridViewModal("https://cdn.awsli.com.br/600x450/2443/2443179/produto/163426249/f99dcad9c9.jpg", "A Arte da Guerra","Sun Tzu")
 
         val gridViewAdapter = GridViewAdapter(listaLivros, homeFragmentContext)
         gridViewLivros.adapter = gridViewAdapter
