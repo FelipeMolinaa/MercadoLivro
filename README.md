@@ -8,7 +8,7 @@
 
 ## Como instalar:
 
-1. Acesse <a href="docs/mercadolivroV0.0.1.apk" download>clique aqui</a> para instalar o .apk do nosso app
+1. Acesse <a href="docs/mercadolivroV0.0.2.apk" download>clique aqui</a> para instalar o .apk do nosso app
 2. Envie o arquivo para um aplicativo **Android** e execute
 3. Habilite a instalação de aplicativos de fontes desconhecidas
 4. clique em instalar
